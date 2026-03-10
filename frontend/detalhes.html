@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes - GB TechStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GB TechStore</h1>
+        <nav>
+            <a href="produtos.html">Produtos</a>
+            <div id="abrir-carrinho">🛒 <span id="contador-carrinho">0</span></div>
+            <a href="index.html">Sair</a>
+        </nav>
+    </header>
+
+    <div id="overlay"></div>
+    <div id="carrinho-lateral" class="carrinho-lateral">
+        <div class="carrinho-header">
+            <h2>Seu Carrinho</h2>
+            <button id="fechar-carrinho" class="btn btn-fechar">X</button>
+        </div>
+        <div id="itens-carrinho"></div>
+        <div class="carrinho-footer">
+            <h3 id="total-carrinho">Total: R$ 0,00</h3>
+            <button class="btn btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <main>
+        <a href="produtos.html" class="btn btn-voltar">⬅ Voltar para Produtos</a>
+        <div id="detalhes-container" class="detalhes-container">
+            <h2 class="msg-carregando" id="msg-carregando">Buscando informações do produto...</h2>
+        </div>
+    </main>
+
+    <footer><p>&copy; 2026 GB TechStore. Todos os direitos reservados</p></footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
